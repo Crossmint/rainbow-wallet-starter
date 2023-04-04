@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@crossmint/connect': ^0.0.8
+  '@ethersproject/providers': ^5.7.2
   '@rainbow-me/rainbowkit': ^0.12.6
   '@types/node': ^17.0.35
   '@types/react': ^18.0.9
@@ -14,6 +16,8 @@ specifiers:
   wagmi: ^0.12.0
 
 dependencies:
+  '@crossmint/connect': 0.0.8
+  '@ethersproject/providers': 5.7.2
   '@rainbow-me/rainbowkit': 0.12.6_2fititxz57zmejfsaxvrw42qum
   ethers: 5.7.2
   next: 12.3.4_biqbaboplfbrettd7655fr4n2y
@@ -144,6 +148,21 @@ packages:
       util: 0.12.5
     transitivePeerDependencies:
       - '@babel/core'
+      - bufferutil
+      - encoding
+      - supports-color
+      - utf-8-validate
+    dev: false
+
+  /@crossmint/connect/0.0.8:
+    resolution: {integrity: sha512-2qcO3IdriQB2e3RfBywqqH+BGKp01ugHKUG4rSJeVxJTHeogoHP5UX9UAOeXttSwJiOeRPh5lciAFi2O+HOSoA==}
+    dependencies:
+      '@solana/wallet-adapter-base': 0.9.22_@solana+web3.js@1.74.0
+      '@solana/web3.js': 1.74.0
+      ethers: 5.7.2
+      react: 18.2.0
+      store2: 2.14.2
+    transitivePeerDependencies:
       - bufferutil
       - encoding
       - supports-color
@@ -896,6 +915,27 @@ packages:
       buffer: 6.0.3
     dev: false
 
+  /@solana/wallet-adapter-base/0.9.22_@solana+web3.js@1.74.0:
+    resolution: {integrity: sha512-xbLEZPGSJFvgTeldG9D55evhl7QK/3e/F7vhvcA97mEt1eieTgeKMnGlmmjs3yivI3/gtZNZeSk1XZLnhKcQvw==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      '@solana/web3.js': ^1.58.0
+    dependencies:
+      '@solana/wallet-standard-features': 1.0.1
+      '@solana/web3.js': 1.74.0
+      '@wallet-standard/base': 1.0.1
+      '@wallet-standard/features': 1.0.3
+      eventemitter3: 4.0.7
+    dev: false
+
+  /@solana/wallet-standard-features/1.0.1:
+    resolution: {integrity: sha512-SUfx7KtBJ55XIj0qAhhVcC1I6MklAXqWFEz9hDHW+6YcJIyvfix/EilBhaBik1FJ2JT0zukpOfFv8zpuAbFRbw==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@wallet-standard/base': 1.0.1
+      '@wallet-standard/features': 1.0.3
+    dev: false
+
   /@solana/web3.js/1.74.0:
     resolution: {integrity: sha512-RKZyPqizPCxmpMGfpu4fuplNZEWCrhRBjjVstv5QnAJvgln1jgOfgui+rjl1ExnqDnWKg9uaZ5jtGROH/cwabg==}
     dependencies:
@@ -1321,6 +1361,18 @@ packages:
       - supports-color
       - utf-8-validate
       - zod
+    dev: false
+
+  /@wallet-standard/base/1.0.1:
+    resolution: {integrity: sha512-1To3ekMfzhYxe0Yhkpri+Fedq0SYcfrOfJi3vbLjMwF2qiKPjTGLwZkf2C9ftdQmxES+hmxhBzTwF4KgcOwf8w==}
+    engines: {node: '>=16'}
+    dev: false
+
+  /@wallet-standard/features/1.0.3:
+    resolution: {integrity: sha512-m8475I6W5LTatTZuUz5JJNK42wFRgkJTB0I9tkruMwfqBF2UN2eomkYNVf9RbrsROelCRzSFmugqjKZBFaubsA==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@wallet-standard/base': 1.0.1
     dev: false
 
   /@walletconnect/core/2.5.2_cin3sed6ohfsopbmt6orxeb4o4:
@@ -4468,6 +4520,10 @@ packages:
     dependencies:
       internal-slot: 1.0.5
     dev: true
+
+  /store2/2.14.2:
+    resolution: {integrity: sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==}
+    dev: false
 
   /stream-browserify/3.0.0:
     resolution: {integrity: sha512-H73RAHsVBapbim0tU2JwwOiXUj+fikfiaoYAKHF3VJfA0pe2BCzkhAHBlLG6REzE+2WNZcxOXjK7lkso+9euLA==}
